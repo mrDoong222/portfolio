@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#career">Teaching Experience</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <div class="about-box">
+            <img src="portrait.JPG" alt="portrait" width="200" height="267">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>I am a primary educator that explores how technology can serve as a tool for promoting equity.</p>
+            </div>
+        </div>
+    </section>
+   
+    <section id="career">
+        <h1>Teaching Experience</h1>
+        <p>
+            <span class="clickable" onclick="showPopup()">Third grade teacher at Daniel Webster Elementary</span>
+        </p>
+        <p>
+            <span class="clickable" onclick="showPopup2()">English teacher at 월서중학교 (Wolseo Middle School)</span>
+        </p>
+    </section>
+
+    <section id="curriculum">
+        <h1>Curriculum</h1>
+        <ul>
+            <li>Benchmark Advance</li>
+            <li>Systematic ELD</li>
+            <li>Bridges Math</li>
+            <li>Twig Science</li>
+            <li>SFUSD Creative Computing Curriculum</li>
+            <li>Wonder Workshop Applied Robotics</li>
+            <li>Kimochis</li>
+            <li>Korean National Curriculum</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h1>Education</h1>
+        <ul>
+            <li>Multiple Subject Credential Program <br>
+                San Francisco State University | 2021 | GPA: 4.0
+                </li>
+            <li>Bachelor of Arts in Literature <br>
+                University of California - Santa Cruz | 2016 | GPA: 3.88 (Magna Cum Laude)
+                </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; L. Doong</p>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2>Daly City, California | August 2021 - Present</h2>
+        <ul>
+            <li>Increased math test scores by 9% over one year by implementing personalized learning plans based on weekly assessment data and adapting instruction using small group interventions.</li>
+            <li>Implemented daily SEL activities and UDL strategies, resulting in a 30% reduction in behavioral incidents and a 15% increase in student engagement as measured by classroom observations.</li>
+            <li>Initiated and coordinated cross-grade reading buddies and pen pal programs, involving over 70 students across multiple grade levels, fostering mentorship and strengthening inter-grade relationships.</li>
+            <li>Analyzed standardized test scores and climate survey data in leadership team, providing evidence-based recommendations for academic interventions across subjects and identifying 'social awareness' as a key focus area for school-wide SEL initiatives.</li>
+        </ul>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <div class="popup" id="popup2">
+        <h2> Daegu, South Korea | March 2017 - February 2018</h2>
+        <ul>
+            <li>Designed and delivered English lesson plans for grades 6-8, and administered assessments to evaluate students' listening and speaking skills.</li>
+            <li>Guided individual students through English-based projects, including plays, speeches, and personal statements, enhancing their language abilities through hands-on learning.</li>
+        </ul>
+        <button class="close-btn" onclick="closePopup2()">Close</button>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+
+        function showPopup2() {
+            document.getElementById("popup2").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function closePopup2() {
+            document.getElementById("popup2").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
