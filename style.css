@@ -163,7 +163,7 @@ footer {
 
 /* Personal section styling */
 #personal {
-     background-color: #FFFFFF; /* Light background for contrast */
+    background: white; /* Light background for contrast */
 }
 
 /* Button styling */
