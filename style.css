@@ -76,7 +76,6 @@ footer {
     color: white;
     position: relative;
     width: 100%;
-    bottom: 
 }
 /* Popup Styles */
 .popup {
@@ -160,4 +159,25 @@ footer {
 
 .about-box img {
     margin-left: 20px; /* Space between text and image */
+}
+
+/* Personal section styling */
+#personal {
+    background: #f4f4f4; /* Light background for contrast */
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-size: 16px; /* Font size */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
