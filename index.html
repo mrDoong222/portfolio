@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link to the external JS file -->
 </head>
 <body>
     <header>
@@ -12,6 +13,7 @@
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#career">Teaching Experience</a></li>
+                <li><a href="#personal">Personal Statement</a></li>
                 <li><a href="#curriculum">Curriculum</a></li>
                 <li><a href="#education">Education</a></li>
             </ul>
@@ -28,6 +30,22 @@
         </div>
     </section>
    
+    <section id="personal">
+        <h1>Personal Statement</h1>
+        <p>I became a teacher to serve my community and improve the lives of children in my neighborhood. Teaching at a Title 1 school has provided me the opportunity to support students from low-income backgrounds, where I’ve seen firsthand how education can create opportunities and change lives. My goal is to equip every student with the resources and support they need to succeed. Before becoming a licensed teacher, 
+        <span id="more" style="display: none;">
+            I volunteered at my local church and community center and taught adults English through Project SHINE at City College of San Francisco. I also spent a year teaching middle school English in Daegu, South Korea, which broadened my perspective on education. And travelling to Thailand, Hong Kong, and the Philippines has further deepened my understanding of different cultures.
+<br><br>
+
+            I’m interested in using data and technology to enhance student learning and improve outcomes. I tailor lessons based on test scores and have introduced a computer science curriculum to engage students in STEM. As the school’s technology lead, I solve technical challenges and help integrate new systems that benefit both students and staff. Outside of teaching, I enjoy fitness activities like running and strength training, where I track my progress to challenge myself. This systematic approach mirrors my belief that data-driven adjustments can significantly impact student achievement. In my free time, I also explore filmmaking and fashion. I work on personal film projects with my mirrorless camera and vintage lenses and produce "Student of the Month" videos for my classroom. Additionally, I'm also interested in finding vintage clothing from the '80s and '90s, exploring the history of modern fashion.
+            <br><br>
+
+            I’m eager to grow as an educator, gain new perspectives, and challenge myself in different educational settings. 
+        </span>
+        </p>
+        <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
+    </section>
+    
     <section id="career">
         <h1>Teaching Experience</h1>
         <p>
@@ -57,10 +75,10 @@
         <ul>
             <li>Multiple Subject Credential Program <br>
                 San Francisco State University | 2021 | GPA: 4.0
-                </li>
+            </li>
             <li>Bachelor of Arts in Literature <br>
                 University of California - Santa Cruz | 2016 | GPA: 3.88 (Magna Cum Laude)
-                </li>
+            </li>
         </ul>
     </section>
 
@@ -88,27 +106,5 @@
         </ul>
         <button class="close-btn" onclick="closePopup2()">Close</button>
     </div>
-
-    <script>
-        function showPopup() {
-            document.getElementById("popup").style.display = "block";
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-
-        function showPopup2() {
-            document.getElementById("popup2").style.display = "block";
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function closePopup2() {
-            document.getElementById("popup2").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
 </body>
 </html>
