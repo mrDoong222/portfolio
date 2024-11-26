@@ -3,122 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> <!-- Link to the external JS file -->
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,500,700" rel="stylesheet">
+    <script src="script.js" defer></script> 
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#career">Teaching Experience</a></li>
-                <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#projects">Project-Based Learning</a></li>
-                <li><a href="#personal">History</a></li>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <div class="about-box">
-            <img src="portrait.JPG" alt="portrait" width="217" height="195">
-            <div class="about-text">
-                <h1>About Me</h1>
-                <p>I am a primary educator focused on exploring how technology can be used to enhance equity.</p>
-            </div>
+    <nav>
+        <div class="hover-content">
+          <h3>Portfolio</h3>
+          <ol>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#career">Teaching Experience</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+          </ol>
         </div>
-    </section>
+        <div>
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-6/triangle.png">
+        </div>
+      </nav>
 
-    <section id="education">
-        <h1>Education</h1>
-        <ul>
-            <li>Multiple Subject Credential Program <br>
-                San Francisco State University | 2021 | GPA: 4.0
-            </li>
-            <li>Bachelor of Arts in Literature <br>
-                University of California - Santa Cruz | 2016 | GPA: 3.88 (Magna Cum Laude)
-            </li>
-        </ul>
-    </section>
+ <header class="banner">
 
-    <section id="career">
-        <h1>Teaching Experience</h1>
-        <p>
-            <span class="clickable" onclick="showPopup()">Third grade teacher at Daniel Webster Elementary</span>
-        </p>
-        <p>
-            <span class="clickable" onclick="showPopup2()">English teacher at 월서중학교 (Wolseo Middle School)</span>
-        </p>
-    </section>
+    <h2>Loyd Doong</h2>
+    <p>Daly City, California</p>
+  </header>
 
-    <section id="curriculum">
-        <h1>Curriculum/Technology</h1>
-        <ul>
-            <li>I use the following Common Core Aligned Curriculum: Benchmark Advance, Bridges Math, Twig
-                Science, SFUSD Creative Computing, Wonder Workshop, Kimochis</li>
-            <li>Google Workspace, Synergy SIS, Clever, ClassDojo (School Mentor, 600+ parent connections), Magic School AI (AI Pioneer Program member, led staff training on science curriculum accessibility),  Python (Pandas for data analysis), SQL
-</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h1>Project-Based Learning</h1>
-        <p>Student work from their portfolios will be coming soon.</p>
-    </section>
+  <div class="book-content">
+    <div class="chapter", id="About">
+        <span class="name">About Me</span>
+    </div>
+    <div class="prose">
+        <p>I am a primary educator focused on exploring how technology can be used to enhance equity.</p>
+    </div>
+<div class="chapter" id="education">
+    <span class="name">Education</span>
+</div>
+<div class="prose">
+    <ul>
+        <li>Multiple Subject Credential Program <br>
+            San Francisco State University | 2021 | GPA: 4.0
+        </li>
+        <li>Bachelor of Arts in Literature <br>
+            University of California - Santa Cruz | 2016 | GPA: 3.88 (Magna Cum Laude)
+        </li>
+    </ul>
+</div>
+
+<div class="chapter" id="Experience">
+    <span class="name">Teaching Experience</span>
+  </div>
+  <div class="prose">
+    <p>
+        <span class="clickable" onclick="showPopup()">Third grade teacher at Daniel Webster Elementary</span>
+    </p>
+    <p>
+        <span class="clickable" onclick="showPopup2()">English teacher at 월서중학교 (Wolseo Middle School)</span>
+    </p>
+    </div>
+    <div class="chapter" id="curriculum">
+        <span class="name">Curriculum & Technology</span>
+    </div>
+
+    <div class="prose">I use the following Common Core aligned
+        <div class="definable">
+          <span class="word">curriculum</span><!-- Trailing comments prevents indentation whitespace from displaying between divs.
+         --><div class="definition-container">
+            <h4>curriculum</h4>
+            <span class="information"></span>
+            <ol class="definitions">
+                <p>Benchmark Advance, Bridges Math, Twig Science, SFUSD Creative Computing, Wonder Workshop, Kimochis</p>
+            </ul>
+          </div><!--
+     --></div>, and know the following
+     <div class="definable">
+        <span class="word">technologies</span><!-- Trailing comments prevents indentation whitespace from displaying between divs.
+       --><div class="definition-container">
+          <h4>technologies</h4>
+          <span class="information"></span>
+          <ol class="definitions">
+            <p>Google Workspace, Synergy SIS, Clever, ClassDojo (School Mentor, 600+ parent connections), Magic School AI (AI Pioneer Program member, led staff training on science curriculum accessibility),  Python (Pandas for data analysis, Django), SQL</p>
+          </ul>
+          </div>
+          </div>.
+          </div>
     
-    <section id="personal">
-        <h1>History</h1>
-        <p>I became a teacher to serve my community and improve the lives of children in my neighborhood. Teaching at a Title 1 school has provided me the opportunity to support students from low-income backgrounds, where I’ve seen firsthand how education can create opportunities and change lives. My goal is to equip every student with the resources and support they need to succeed. Before becoming a licensed teacher, I 
-        <span id="more" style="display: none;">
-            volunteered at my local church and community center and taught adults English through Project SHINE at City College of San Francisco. I also spent a year teaching middle school English in Daegu, South Korea, which broadened my perspective on education. And travelling to Thailand, Hong Kong, and the Philippines has further deepened my understanding of different cultures.
-<br><br>
-
-            I’m interested in using data and technology to enhance student learning and improve outcomes. I tailor lessons based on assessments and have introduced a computer science curriculum and robotics to engage students in STEM. As the school’s technology lead, I solve technical challenges and help integrate new systems that benefit both students and staff. 
-            <br><br>
-
-            Outside of teaching, I enjoy fitness activities like running and strength training, where I track my progress to challenge myself. In my free time, I also explore filmmaking and fashion. I work on personal film projects with my mirrorless camera and vintage lenses. Additionally, I'm also interested in finding vintage clothing from the '80s and '90s, exploring the history of modern fashion.
-            <br><br>
-
-            I’m eager to grow as an educator, gain new perspectives, and challenge myself in different educational settings. 
-        </span>
-        </p>
-        <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button>
-    </section>
-
-
     <div class="overlay" id="overlay"></div>
-    <div class="popup" id="popup">
-        <h2>Daly City, California | August 2021 - Present</h2>
-        <ul>
-            <li>Raised 3rd grade math scores by ~10% through data-driven personalized learning plans and targeted group interventions.</li>
-            <li>Implemented daily Social-Emotional Learning (SEL) activities and Universal Design
-                for Learning (UDL) strategies, leading to a 50% improvement in student behavior
-                and engagement, as measured by participation rates and fewer behavioral incidents.</li>
-            <li>Spearheaded implementation of school-wide English Language Development (ELD)
-                block by creating a comprehensive ELPAC data spreadsheet for 300+ students,
-                managing learning material inventory, and coordinating with administration,
-                enabling targeted instruction for all EL levels.</li>
-            <li>Created centralized digital hub consolidating 8 key systems (calendar, schedules, resources, IT requests) into a single spreadsheet platform, serving 15+ staff and eliminating need to search through 100+ archived emails.
-</li>
-            <li>Aggregated standardized test scores and climate survey data to provide
-                evidence-based intervention recommendations for math and English language arts,
-                and to identify key focus areas for school-wide SEL initiatives.</li>
+  <div class="popup" id="popup">
+      <h2>Daly City, California | August 2021 - Present</h2>
+      <ul>
+          <li>Raised 3rd grade math scores by ~10% through data-driven personalized learning plans and targeted group interventions.</li>
+          <br>
+          <li>Implemented daily Social-Emotional Learning (SEL) activities and Universal Design
+              for Learning (UDL) strategies, leading to a 50% improvement in student behavior
+              and engagement, as measured by participation rates and fewer behavioral incidents.</li>
+            <br>
+              <li>Spearheaded implementation of school-wide English Language Development (ELD)
+              block by creating a comprehensive ELPAC data spreadsheet for 300+ students,
+              managing learning material inventory, and coordinating with administration,
+              enabling targeted instruction for all EL levels.</li>
+          <li>Created centralized digital hub consolidating 8 key systems (calendar, schedules, resources, IT requests) into a single spreadsheet platform, serving 15+ staff and eliminating need to search through 100+ archived emails.</li>
+          <br>
+          <li>Aggregated standardized test scores and climate survey data to provide
+              evidence-based intervention recommendations for math and English language arts,
+              and to identify key focus areas for school-wide SEL initiatives.</li>
 
-        </ul>
-        <button class="close-btn" onclick="closePopup()">Close</button>
-    </div>
+      </ul>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+  </div>
 
-    <div class="popup" id="popup2">
-        <h2> Daegu, South Korea | March 2017 - February 2018</h2>
-        <ul>
-            <li>Designed and delivered English lesson plans for grades 6-8, and administered assessments to evaluate students' listening and speaking skills.</li>
-            <li>Guided individual students through English-based projects, including plays, speeches, and personal statements, enhancing their language abilities through hands-on learning.</li>
-        </ul>
-        <button class="close-btn" onclick="closePopup2()">Close</button>
-    </div>
-
-    <footer>
-        <p>&copy; L. Doong</p>
-    </footer>
+  <div class="popup" id="popup2">
+      <h2> Daegu, South Korea | March 2017 - February 2018</h2>
+      <ul>
+          <li>Designed and delivered English lesson plans for grades 6-8, and administered assessments to evaluate students' listening and speaking skills.</li>
+          <br>
+          <li>Guided individual students through English-based projects, including plays, speeches, and personal statements, enhancing their language abilities through hands-on learning.</li>
+          <button class="close-btn" onclick="closePopup2()">Close</button>
+        </div>
+    
 </body>
 </html>
+
+  </div>
+  
