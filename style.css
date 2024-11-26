@@ -1,183 +1,44 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  line-height: 1;
 }
-
-header {
-    background-color: #007acc; /* Blue color */
-    color: white;
-    padding: 1.5rem 0;
-    text-align: center;
+ol, ul {
+  list-style: none;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+blockquote, q {
+  quotes: none;
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 30px;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
 }
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcc00; /* Gold color on hover */
-}
-
-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #007acc; /* Same blue color */
-}
-
-p {
-    margin-bottom: 1.5rem;
-}
-
-/* Style for ul and li in sections */
-ul {
-    margin: 1.5rem 0;
-    padding-left: 1.5rem; /* Add some left padding */
-}
-
-ul li {
-    margin-bottom: 0.5rem; /* Space between list items */
-    list-style-type: disc; /* Default bullet points */
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    position: relative;
-    width: 100%;
-}
-/* Popup Styles */
-.popup {
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border: 1px solid #007acc;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%; /* Adjusted width */
-    max-width: 500px; /* Ensure the pop-up doesn't become too wide */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    overflow: auto; /* Ensure scroll if content exceeds height */
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.close-btn {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-top: 20px; /* Ensure spacing above the button */
-}
-
-/* Adjust pop-up for smaller screens */
-@media screen and (max-width: 600px) {
-    .popup {
-        width: 90%;
-        max-width: 400px;
-    }
-}
-/* Clickable text style */
-.clickable {
-    color: #007acc; /* Blue color to indicate it's clickable */
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer; /* Change cursor to pointer */
-    transition: color 0.3s;
-}
-.clickable:hover {
-    color: #ffcc00; /* Gold color on hover */
-}
-#about {
-    padding: 20px; /* Add padding around the section */
-    border: 1px solid #ccc; /* Optional: Add a border around the section */
-}
-
-.about-box {
-    display: flex; /* Align items horizontally */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Vertically center text and image */
-}
-
-.about-text {
-    max-width: 60%; /* Limit the width of the text */
-}
-
-.about-text h1 {
-    margin: 0; /* Remove default margin for heading */
-}
-
-.about-text p {
-    margin: 10px 0 0; /* Add margin to the paragraph */
-}
-
-.about-box img {
-    margin-left: 20px; /* Space between text and image */
-}
-
-/* Personal section styling */
-#personal {
-    background: white; /* Light background for contrast */
-}
-
-/* Button styling */
-button {
-    background-color: #007BFF; /* Blue background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Padding */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s ease; /* Smooth transition */
-    font-size: 16px; /* Font size */
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
